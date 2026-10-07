@@ -1,0 +1,179 @@
+:root {
+  /* Core Colors */
+  --obsidian: #08090A;
+  --carbon: #111214;
+  --velvet-black: #161315;
+  --ivory: #F1EDE5;
+  --warm-white: #F8F5EF;
+  --champagne: #C7A66A;
+  --aged-gold: #98743F;
+  --platinum: #C5C7C7;
+  --smoke: #777774;
+  --graphite: #292A2C;
+
+  /* Jewel Accents */
+  --emerald: #163D34;
+  --emerald-deep: #0D2620;
+  --ruby: #68252E;
+  --ruby-deep: #3E141B;
+  --sapphire: #172A4A;
+  --sapphire-deep: #0E1B31;
+  --amethyst: #49334F;
+  --amethyst-deep: #2A1D2E;
+
+  /* Dynamic Theme Variables (default: Obsidian dark exhibition) */
+  --bg-primary: var(--obsidian);
+  --bg-secondary: var(--carbon);
+  --bg-surface: #141518;
+  --text-primary: var(--ivory);
+  --text-secondary: var(--smoke);
+  --text-muted: #5A5B5E;
+  --accent: var(--champagne);
+  --accent-secondary: var(--aged-gold);
+  --border-subtle: rgba(199, 166, 106, 0.15);
+  --border-glass: rgba(241, 237, 229, 0.08);
+  --halo-glow: rgba(199, 166, 106, 0.08);
+
+  /* Fonts */
+  --font-logotype: 'Bodoni Moda', serif;
+  --font-display: 'Bodoni Moda', serif;
+  --font-italiana: 'Italiana', serif;
+  --font-newsreader: 'Newsreader', serif;
+  --font-mono: 'DM Mono', monospace;
+  --font-handwritten: 'Ballet', cursive;
+  --font-ui: 'Space Grotesk', sans-serif;
+
+  /* Container Widths & Breakpoints */
+  --container-max: 1720px;
+  --container-editorial: 960px;
+  --container-narrow: 760px;
+
+  /* Z-Index Hierarchy */
+  --z-negative: -1;
+  --z-base: 1;
+  --z-elevated: 10;
+  --z-overlay: 40;
+  --z-header: 50;
+  --z-drawer: 9990;
+  --z-modal: 9995;
+  --z-transition: 99990;
+  --z-preloader: 99999;
+  --z-cursor: 100000;
+
+  /* Border Radii (Haute Horlogerie & Joaillerie Precision) */
+  --radius-none: 0px;
+  --radius-xs: 1px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* Luxury Lighting & Shadows */
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.15);
+  --shadow-luxury: 0 20px 50px rgba(0, 0, 0, 0.35);
+  --shadow-glow-champagne: 0 0 25px rgba(199, 166, 106, 0.2);
+  --shadow-glow-emerald: 0 0 25px rgba(15, 70, 50, 0.3);
+  --shadow-glow-ruby: 0 0 25px rgba(104, 37, 46, 0.3);
+
+  /* Spacing & Transitions */
+  --header-height: 92px;
+  --header-scrolled-height: 72px;
+  --ease-cinematic: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-soft: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --duration-fast: 250ms;
+  --duration-medium: 450ms;
+  --duration-slow: 850ms;
+  --transition-slow: 0.85s cubic-bezier(0.19, 1, 0.22, 1);
+  --transition-medium: 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+  --transition-fast: 0.25s ease-out;
+}
+
+/* Page Theme Overrides */
+body[data-theme="obsidian"],
+.theme-obsidian {
+  --bg-primary: var(--obsidian);
+  --bg-secondary: var(--carbon);
+  --bg-surface: #131417;
+  --text-primary: var(--ivory);
+  --text-secondary: #9B9A96;
+  --text-muted: #646568;
+  --accent: var(--champagne);
+  --border-subtle: rgba(199, 166, 106, 0.18);
+  --border-glass: rgba(241, 237, 229, 0.08);
+}
+
+body[data-theme="warm-white"],
+.theme-warm-white {
+  --bg-primary: var(--warm-white);
+  --bg-secondary: #EBE6DC;
+  --bg-surface: #F2EFE8;
+  --text-primary: var(--graphite);
+  --text-secondary: #656668;
+  --text-muted: #8E8F92;
+  --accent: var(--aged-gold);
+  --border-subtle: rgba(41, 42, 44, 0.15);
+  --border-glass: rgba(41, 42, 44, 0.08);
+}
+
+body[data-theme="ivory-archive"],
+.theme-ivory-archive {
+  --bg-primary: var(--ivory);
+  --bg-secondary: #E5DFD4;
+  --bg-surface: #ECE6DB;
+  --text-primary: var(--carbon);
+  --text-secondary: #58595C;
+  --text-muted: #828386;
+  --accent: var(--aged-gold);
+  --border-subtle: rgba(152, 116, 63, 0.25);
+  --border-glass: rgba(17, 18, 20, 0.1);
+}
+
+body[data-theme="graphite-atelier"],
+.theme-graphite-atelier {
+  --bg-primary: var(--graphite);
+  --bg-secondary: #1F2022;
+  --bg-surface: #343538;
+  --text-primary: var(--warm-white);
+  --text-secondary: var(--platinum);
+  --text-muted: #8E9094;
+  --accent: var(--champagne);
+  --border-subtle: rgba(197, 199, 199, 0.2);
+  --border-glass: rgba(248, 245, 239, 0.1);
+}
+
+body[data-theme="ruby-bespoke"],
+.theme-ruby-bespoke {
+  --bg-primary: var(--ruby-deep);
+  --bg-secondary: #2C0C12;
+  --bg-surface: #4B1620;
+  --text-primary: var(--ivory);
+  --text-secondary: #DFCECE;
+  --text-muted: #B38F95;
+  --accent: var(--champagne);
+  --border-subtle: rgba(199, 166, 106, 0.25);
+  --border-glass: rgba(241, 237, 229, 0.12);
+}
+
+body[data-theme="emerald-salon"],
+.theme-emerald-salon {
+  --bg-primary: var(--emerald-deep);
+  --bg-secondary: #081B16;
+  --bg-surface: #133A31;
+  --text-primary: var(--ivory);
+  --text-secondary: #C4D6D1;
+  --text-muted: #84A39B;
+  --accent: var(--champagne);
+  --border-subtle: rgba(199, 166, 106, 0.25);
+  --border-glass: rgba(241, 237, 229, 0.12);
+}
+
+body[data-theme="contact-obsidian"],
+.theme-contact-obsidian {
+  --bg-primary: var(--obsidian);
+  --bg-secondary: #111215;
+  --bg-surface: #1B1D20;
+  --text-primary: var(--platinum);
+  --text-secondary: var(--smoke);
+  --text-muted: #535558;
+  --accent: var(--platinum);
+  --border-subtle: rgba(197, 199, 199, 0.2);
+  --border-glass: rgba(197, 199, 199, 0.08);
+}
